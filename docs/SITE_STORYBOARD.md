@@ -15,3 +15,9 @@ Every chapter is readable without animation. Entry and exit use viewport-relativ
 | 09 Future ready | The future moves with you. | Large 2031 typography and two product links | Restrained final opacity and scale | Natural document end; links navigate back to solution sections | Source Cactus identity, team credits; static mobile/reduced motion |
 
 Reference study: Apple AU MacBook Pro display, AirPods Pro and iPhone 17 pages inspected on 2 November 2026. Adopt product-first hierarchy, scene-specific imagery, restrained navigation, dark/light contrast and progressive disclosure. Use no Apple imagery, copy, logos or implementation.
+
+## Character integration revision
+
+Chapter 02 now uses a sticky three-stage Ella illustration sequence: scrolling → finding a recipe → time pressure. Original extracted artwork crossfades in a shared light stage with matching narrative and stage controls; reverse scroll restores prior illustrations. Chapter 03 carries Ella through discovery, sharing with Olive, basket personalisation and the meal alongside the live phone UI. The two Olive stages intentionally reuse the established share artwork.
+
+Chapter 05 replaces the small inset with full-size transparent source compositions. Early Jacob poses share the floor with the modular locker; the loading stage uses the original separate staff member + locker; readiness returns to the closed live locker; collection uses the original Jacob + locker. The source compositions become the main stage without postcard frames. The live collection demo retains the opening compartment interaction. Stage buttons move the narrative to the corresponding step; in reduced-motion mode they change the illustration in place.

@@ -46,7 +46,17 @@ export function useScrollScene(){
   document.fonts.ready.then(refresh);
   return ()=>{mm.revert();window.removeEventListener('load',refresh);};
  },[]);
- return {ref,phase,setPhase};
+ const selectPhase=(index:number)=>{
+  setPhase(index);
+  if(document.documentElement.dataset.motion==='reduce'||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const root=ref.current;
+  const step=root?.querySelectorAll<HTMLElement>('[data-step]')[index];
+  if(!step)return;
+  const stage=root?.querySelector<HTMLElement>('.story-visual');
+  const offset=window.innerWidth<=800?(stage?.offsetHeight??380)+90:window.innerHeight*.3;
+  window.scrollTo({top:window.scrollY+step.getBoundingClientRect().top-offset,behavior:'instant'});
+ };
+ return {ref,phase,setPhase:selectPhase};
 }
 export function usePageMotion(){
  useEffect(()=>{

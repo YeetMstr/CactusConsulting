@@ -31,3 +31,7 @@ Local `qa/desktop-hero.jpg`, `qa/desktop-ecosystem.jpg`, `qa/mobile-hero.jpg`, `
 ## Remaining limits
 
 The hardware is a lightweight layered interpretation of the approved source design, not production CAD. Recipe recognition, product and pricing examples are simulated. Research inputs remain deck-cited with incomplete bibliography. Forecasts are supplied assumptions, not independently validated returns. Formal screen-reader and physical-device testing remain outside this verification.
+
+## Character-sequence revision checks
+
+Desktop and mobile browser checks confirmed Ella's recipe → busy → recipe artwork in both scroll directions. Chapter 03 stage selection changes Ella to the matching illustration, including the finished meal. Ready in 5's loading and collection graphics are full-size transparent source scenes, with the staff/customer distinction retained. Stage controls now synchronise narrative position as well as graphics. Rechecked 1440/1024/768/390/360 widths: no document overflow. New screenshots: qa/ella-reel-desktop.jpg, qa/ready-integrated-desktop.jpg and qa/ready-integrated-mobile.jpg.

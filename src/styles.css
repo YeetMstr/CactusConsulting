@@ -44,3 +44,87 @@ html[data-motion=reduce] .ingredient-flight{display:none}
 @media(max-width:800px){.story-visual .app-brand>svg{height:14px}.story-visual .olive-screen{padding-top:34px}.story-visual .app-eyebrow{margin-top:10px}.story-visual .basket-items{margin-top:8px}.story-visual .basket-item{padding-block:5px}.story-visual .basket-total{margin-block:6px}.story-visual .phone-action{margin-top:6px;padding-block:7px}.story-visual .phone-footnote{margin-top:5px}}
 
 .reel-demo-grid>.demo-basket>.fine-print{color:#64735c}.nav-cta{min-height:44px}
+/* Character-led scenes: original presentation artwork belongs to the story stage. */
+.character-sequence{position:relative;width:100%;height:100%;isolation:isolate}
+.character-frame{position:absolute;inset:0;opacity:0;transform:translate3d(0,16px,0) scale(.97);transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.character-frame.is-active{opacity:1;transform:translate3d(0,0,0) scale(1)}
+.character-frame img{width:100%;height:100%;object-fit:contain}
+.ella-journey-heading{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-top:35px}
+.ella-journey-heading h2{font-size:clamp(44px,5.5vw,78px)}
+.ella-journey-heading>p{font-size:15px;line-height:1.6;color:#697960;max-width:240px;padding-bottom:5px}
+.ella-story{width:100%;margin-top:50px;gap:70px}
+.ella-story .story-step{min-height:53vh;opacity:.45}
+.ella-story .story-step.in-focus{opacity:1}
+.ella-story .story-step h3{font-size:44px;color:#1b432b}
+.ella-story .story-step p{color:#66775d;font-size:16px}
+.ella-story .step-number{color:#5c7c46}
+.ella-visual{height:calc(100svh - 160px);min-height:540px;max-height:690px;justify-content:center}
+.ella-scene-top,.ella-scene-bottom{display:flex;align-items:center;justify-content:space-between;width:100%;gap:15px}
+.ella-scene-top{font-size:8px;letter-spacing:.12em;color:#61764f;border-bottom:1px solid #cdd8c1;padding-bottom:18px}
+.ella-illustration-stage{position:relative;width:100%;height:410px;display:grid;place-items:center;margin-block:15px;isolation:isolate}
+.ella-scene-disc{position:absolute;width:92%;aspect-ratio:1;border-radius:50%;background:#e7eddd;z-index:-1}
+.ella-illustration-stage .character-sequence{mix-blend-mode:multiply}
+.ella-scene-bottom{border-top:1px solid #cdd8c1;padding-top:17px;color:#365c2f}
+.ella-scene-bottom>p{font-size:21px;letter-spacing:-.04em}
+.ella-scene-bottom>span{display:flex;align-items:center;gap:10px;font-size:7px;letter-spacing:.08em;color:#71845e}
+.ella-visual .phase-controls{margin-top:20px}
+.ella-visual .phase-controls button{color:#4f7040;border-color:#aabd96}
+.ella-visual .phase-controls button.selected{background:#244c31;color:#edf6e2;border-color:#244c31}
+.ella-story .text-link{color:#335e31;margin-top:15px;align-self:start}
+.ella-journey .genz-bottom{margin-top:50px}
+.reel-persona-stage>[data-scene-visual]{margin-left:95px}
+.reel-persona{position:absolute;z-index:2;width:250px;height:235px;left:-45px;bottom:130px;isolation:isolate}
+.reel-persona:before{content:'';position:absolute;inset:20px -10px -5px;background:#edf1e5;border-radius:48% 52% 45% 55%;z-index:-1}
+.reel-persona .character-sequence{mix-blend-mode:multiply}
+.reel-persona>p{font-size:9px;color:#d6e7c7;text-align:center;letter-spacing:.015em;margin-top:8px}
+.integrated-locker-scene{width:100%;height:565px;position:relative;isolation:isolate}
+.locker-visual .integrated-locker-scene{margin-top:-30px}
+.locker-scene-label{position:absolute;top:15px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;color:#c4d8b2;font-size:8px;letter-spacing:.13em;z-index:6;border-bottom:1px solid #8ca47844;padding-bottom:16px}
+.integrated-locker-scene .locker-hardware{position:absolute;right:-15px;bottom:45px;z-index:1;transform:scale(.88);transform-origin:bottom right;transition:opacity .45s,filter .45s}
+.integrated-locker-scene.source-closeup .locker-hardware{opacity:0;pointer-events:none}
+.ready-characters{position:absolute;inset:60px -25px 22px -25px;height:auto;width:auto;z-index:3}
+.ready-characters .character-frame img{object-position:center bottom;filter:drop-shadow(0 20px 16px #0002)}
+.integrated-locker-scene:not(.source-closeup) .ready-characters{inset:115px auto 40px -65px;width:245px}
+.integrated-locker-scene:not(.source-closeup) .ready-characters .character-frame img{object-position:center bottom}
+.locker-scene-floor{position:absolute;height:95px;width:115%;left:-8%;bottom:0;background:radial-gradient(ellipse,#011b10a6,transparent 68%);z-index:0}
+.ready-scene-notice{position:absolute;right:-7px;bottom:35px;z-index:4;background:#d9edc8;color:#1e482b;display:flex;align-items:center;gap:12px;padding:14px 17px;border-radius:6px;box-shadow:0 15px 30px #0002;font-size:11px}
+.ready-scene-notice small{display:block;font-size:8px;margin-top:4px;color:#5b7350}
+.locker-visual .phase-controls{bottom:25px}
+.locker-visual .scene-caption{bottom:0}
+@media(max-width:1100px) and (min-width:801px){.reel-persona{width:200px;height:190px;left:-15px;bottom:140px}.reel-persona-stage>[data-scene-visual]{margin-left:65px}.ella-story{gap:40px}.ella-story .story-step h3{font-size:36px}.ella-illustration-stage{height:350px}.integrated-locker-scene{height:520px}.integrated-locker-scene .locker-hardware{right:-20px;transform:scale(.82)}.integrated-locker-scene:not(.source-closeup) .ready-characters{left:-45px;width:200px;bottom:40px}}
+@media(max-width:800px){
+ .ella-journey-heading{align-items:start;gap:30px}.ella-journey-heading h2{font-size:49px}.ella-journey-heading>p{font-size:12px;max-width:160px}
+ .ella-story{margin-top:35px}.ella-visual{height:390px;min-height:0;max-height:none;background:linear-gradient(#f7f8f3 93%,#f7f8f300);padding:5px 45px 30px;justify-content:center;z-index:5}
+ .ella-illustration-stage{height:265px;margin-block:8px;max-width:400px}.ella-scene-disc{height:250px;width:270px}
+ .ella-scene-top{font-size:7px;padding-bottom:10px}.ella-scene-bottom{padding-top:10px}.ella-scene-bottom>p{font-size:17px}.ella-scene-bottom>span{font-size:6px}
+ .ella-visual .phase-controls{top:105px;left:-8px;position:absolute}.ella-story .story-step{min-height:42vh;padding-block:35px 50px}.ella-story .story-step h3{font-size:32px}.ella-story .story-step p{font-size:14px}
+ .reel-persona-stage>[data-scene-visual]{margin-left:65px}.reel-persona{width:153px;height:145px;left:-4px;bottom:22px}.reel-persona:before{inset:5px 0 -3px}.reel-persona>p{font-size:6px;line-height:1.4;max-width:125px;margin:5px auto 0}
+ .reel-persona-stage .phase-controls{top:15px;left:-8px;gap:2px}.reel-persona-stage .phase-controls button{width:44px;height:44px}
+ .integrated-locker-scene{height:350px;width:100%}.locker-visual .integrated-locker-scene{margin-top:0}.locker-scene-label{top:3px;left:48px;right:2px;font-size:6px;padding-bottom:10px}
+ .integrated-locker-scene .locker-hardware{right:3px;bottom:20px;transform:scale(.82)}
+ .ready-characters{inset:35px 0 5px 35px}.integrated-locker-scene:not(.source-closeup) .ready-characters{inset:85px auto 18px 24px;width:145px}
+ .locker-visual .phase-controls{top:45px;left:-9px;gap:2px}.locker-visual .scene-caption{top:15px;right:-12px}
+ .ready-scene-notice{right:5px;bottom:14px;padding:9px 10px;font-size:8px;gap:7px;max-width:205px}.ready-scene-notice small{font-size:6px}.ready-scene-notice>svg{width:14px;height:14px}.locker-scene-floor{bottom:-6px}
+}
+@media(max-width:600px){.ella-journey-heading{display:block}.ella-journey-heading h2{font-size:43px}.ella-journey-heading>p{margin-top:20px;max-width:none;font-size:13px}.ella-journey-heading>p br{display:none}.ella-visual{height:365px;padding:6px 25px 25px 42px}.ella-illustration-stage{height:245px}.ella-scene-disc{width:240px;height:240px}.ella-scene-bottom>p{font-size:16px}.ella-scene-bottom>span{font-size:5px;gap:5px}.ella-scene-top{font-size:6px}.ella-visual .phase-controls{top:92px}.ella-story .story-step h3{font-size:31px}.ella-story .story-step p{font-size:14px}.ella-journey .genz-bottom{margin-top:25px}.reel-persona{width:137px;height:135px;bottom:25px;left:-5px}.reel-persona-stage>[data-scene-visual]{margin-left:65px}.integrated-locker-scene:not(.source-closeup) .ready-characters{left:20px;width:134px;bottom:20px}.ready-characters{inset:38px -4px 12px 36px}.integrated-locker-scene .locker-hardware{right:-5px;bottom:27px;transform:scale(.83)}.ready-scene-notice{bottom:24px;right:-2px}.locker-scene-label{left:44px;right:0;font-size:5px}}
+@media(max-width:380px){.ella-journey-heading h2{font-size:39px}.reel-persona{width:124px;height:122px;left:-4px;bottom:30px}.reel-persona-stage>[data-scene-visual]{margin-left:60px}.integrated-locker-scene:not(.source-closeup) .ready-characters{width:118px;left:16px}.ready-characters{left:34px;right:-5px}}
+@media(max-width:800px) and (prefers-reduced-motion:no-preference){.ella-story .story-copy{padding-top:375px}}
+@media(prefers-reduced-motion:reduce){.character-frame{transition:none}.ella-visual{height:560px}.reel-persona{bottom:120px}.ella-story .story-step{opacity:1;min-height:0}.integrated-locker-scene .locker-hardware{transition:none}}
+@media(prefers-reduced-motion:reduce) and (max-width:800px){.ella-visual{height:365px}.reel-persona{bottom:25px}}
+html[data-motion=reduce] .ella-story .story-step{opacity:1;min-height:0}
+html[data-motion=reduce] .ella-visual{height:560px}
+@media(max-width:800px){html[data-motion=reduce] .ella-visual{height:365px}}
+@media(min-width:801px) and (max-height:800px){.hero-concept{bottom:auto;top:18px;right:0;writing-mode:vertical-rl;font-size:7px}}
+.ella-illustration-stage{isolation:auto}
+.ella-scene-disc{width:min(88%,390px);z-index:0}
+.ella-illustration-stage .character-sequence{z-index:1;isolation:auto}
+.ella-illustration-stage .character-frame{mix-blend-mode:multiply}
+@media(max-width:800px){.ella-scene-disc{width:250px;height:250px}}
+@media(max-width:600px){.ella-scene-disc{width:230px;height:230px}}
+.ella-illustration-stage .character-sequence{mix-blend-mode:normal;background:#e7eddd;border-radius:48% 52% 46% 54%;overflow:hidden;isolation:isolate}
+.ella-illustration-stage .character-frame{mix-blend-mode:multiply}
+.ella-scene-disc{display:none}
+.reel-persona:before{inset:0;border-radius:48% 52% 45% 55%}
+.reel-persona .character-sequence{mix-blend-mode:normal;isolation:isolate;background:#edf1e5;overflow:hidden;border-radius:48% 52% 45% 55%}
+.reel-persona .character-frame{mix-blend-mode:multiply}
+@media(min-width:801px){.story-visual .app-eyebrow{margin-top:18px}.story-visual .basket-items{margin-top:16px}.story-visual .basket-item{padding-block:8px}.story-visual .basket-total{margin-block:12px}.story-visual .phone-action{margin-top:10px;padding-block:11px}.story-visual .phone-footnote{margin-top:10px}}
