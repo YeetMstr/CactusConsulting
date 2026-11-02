@@ -53,9 +53,11 @@ The locker animation interprets the approved source design with lightweight HTML
 
 ## Deploy
 
-`pnpm build` creates a portable static `dist/`. Serve that directory with any static host over HTTPS; no environment variables are needed. Root-relative assets assume deployment at the domain root.
+The site deploys to GitHub Pages at https://yeetmstr.github.io/CactusConsulting/.
 
-For the connected Sites host, preserve `.openai/hosting.json` and its exact project ID. Use the Sites skill source workflow to commit/push the exact source, package `dist`, save the matching version and deploy privately. Do not create a second Site or alter its audience. The root README records the verified deployed URL after publication.
+Every push to `main` runs `.github/workflows/deploy.yml`, which installs with pnpm, runs `pnpm build` and publishes `dist/`. To set it up once: on GitHub open the repo's **Settings → Pages** and set **Source** to **GitHub Actions**. You can also run the workflow by hand from the **Actions** tab.
+
+`vite.config.ts` sets `base: '/CactusConsulting/'`, so images in components use `import.meta.env.BASE_URL` instead of root paths like `/assets/...`. If the repo is renamed, update `base` to match. Locally, `pnpm dev` serves the site at http://127.0.0.1:5173/CactusConsulting/.
 
 ## Validation
 

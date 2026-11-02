@@ -1,3 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-export default defineConfig({ plugins: [react()], build: { target: 'es2022' } });
+
+// GitHub Pages serves this repo at https://yeetmstr.github.io/CactusConsulting/
+export default defineConfig({
+  base: '/CactusConsulting/',
+  plugins: [react()],
+  build: { target: 'es2022' },
+});
