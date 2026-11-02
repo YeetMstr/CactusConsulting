@@ -35,3 +35,7 @@ The hardware is a lightweight layered interpretation of the approved source desi
 ## Character-sequence revision checks
 
 Desktop and mobile browser checks confirmed Ella's recipe → busy → recipe artwork in both scroll directions. Chapter 03 stage selection changes Ella to the matching illustration, including the finished meal. Ready in 5's loading and collection graphics are full-size transparent source scenes, with the staff/customer distinction retained. Stage controls now synchronise narrative position as well as graphics. Rechecked 1440/1024/768/390/360 widths: no document overflow. New screenshots: qa/ella-reel-desktop.jpg, qa/ready-integrated-desktop.jpg and qa/ready-integrated-mobile.jpg.
+
+## Finishing revision
+
+Restored chapter 03's original ReelExperience component and chapter 05's original LockerExperience component, omitting its old changing-character inset. Removed the superseded character-scene CSS and unused Reel-only frame configuration. Chapter 02's EllaJourney is retained unchanged. Build, lint, logic tests and desktop/mobile rendering are rechecked for this revision.
