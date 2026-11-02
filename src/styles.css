@@ -133,3 +133,82 @@ html[data-motion=reduce] .ella-visual{height:560px}
 .ig-tabs>svg{width:2.5em;height:2.5em}
 .ig-tabs .ig-me{width:2.3em;height:2.3em;background:#8d9a8a;border:.1em solid #fff}
 @media(prefers-reduced-motion:reduce){.send-ring{animation:none}}
+/* Reel demo: interactive phone */
+.demo-phone-stage{display:flex;justify-content:center;align-items:center;padding:6px 0;position:relative}
+.demo-phone-stage:before{content:'';position:absolute;inset:8% 6%;background:radial-gradient(closest-side,#4b7a4a66,transparent);pointer-events:none}
+.demo-phone{width:min(330px,100%);height:auto;aspect-ratio:330/674;position:relative}
+.demo-phone .recipe-screen{font-size:11.3px}
+.demo-phone .phone-screen{background:#f7f8f3}
+.demo-copy .demo-steps{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#8fa887}
+.demo-steps li{display:flex;align-items:center;gap:11px}
+.demo-steps li>span{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1px solid #66865b;font-size:10px}
+.demo-steps li.now{color:#e6f4d9}.demo-steps li.now>span{background:#d8f1c7;border-color:#d8f1c7;color:#082d20;font-weight:700}
+.demo-steps li.done{color:#b9cbb0}.demo-steps li.done>span{background:#2f6b45;border-color:#2f6b45;color:#e1f5cf}
+/* instagram share sheet */
+.ig-sheet-wrap{position:absolute;inset:0;z-index:9;display:flex;flex-direction:column;justify-content:flex-end;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
+.ig-scrim{position:absolute;inset:0;border:0;background:#0009;cursor:default;animation:scrimIn .25s ease-out}
+.ig-sheet{position:relative;background:#fff;color:#111;border-radius:16px 16px 0 0;padding:8px 14px 30px;animation:sheetUp .3s ease-out}
+.ig-grabber{display:block;width:36px;height:4px;border-radius:2px;background:#cfcfcf;margin:2px auto 12px}
+.ig-search{display:flex;align-items:center;gap:8px;background:#efefef;border-radius:10px;padding:9px 11px;color:#737373;font-size:13px}
+.ig-search svg{width:16px;height:16px}
+.ig-people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 6px;margin:16px 0 14px}
+.ig-person{display:flex;flex-direction:column;align-items:center;gap:6px;background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer}
+.ig-pavatar{position:relative;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;color:#fff;font-weight:700;font-size:20px}
+.ig-pavatar svg{width:26px;height:26px}
+.ig-person.pulse .ig-pavatar{animation:olivePulse 1.8s ease-out infinite}
+.ig-tick{position:absolute;right:-2px;bottom:-2px;display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#0095f6;border:2px solid #fff}
+.ig-tick svg{width:11px;height:11px;stroke-width:4}
+.ig-pname{font-size:11.5px;max-width:84px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ig-apps{display:flex;justify-content:space-between;border-top:1px solid #efefef;padding-top:12px}
+.ig-apps>span{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:10.5px;width:25%;text-align:center}
+.ig-apps i{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#efefef}
+.ig-apps svg{width:21px;height:21px}
+.ig-compose{border-top:1px solid #efefef;padding-top:12px;display:flex;flex-direction:column;gap:10px}
+.ig-compose input{width:100%;border:1px solid #dbdbdb;border-radius:22px;padding:10px 14px;font:inherit;font-size:13px;color:#111;background:#fff}
+.ig-send-btn{background:#0095f6;color:#fff;border:0;border-radius:9px;padding:11px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.ig-send-btn:disabled{opacity:.4;cursor:default}
+.ig-hint{font-size:11px;color:#737373;text-align:center;margin:0}
+@keyframes sheetUp{from{transform:translateY(40%);opacity:.4}}
+@keyframes scrimIn{from{opacity:0}}
+@keyframes olivePulse{0%{box-shadow:0 0 0 0 #2f7a43aa}70%,100%{box-shadow:0 0 0 10px #2f7a4300}}
+.ig-act.ig-send{background:none;border:0;padding:0;color:inherit;font:inherit;font-size:.95em;font-weight:600;cursor:pointer}
+/* olive app screens */
+.demo-app{display:flex;flex-direction:column;padding:52px 16px 0}
+.demo-app .app-brand{padding-bottom:12px}
+.demo-app .app-brand .olive-avatar{width:28px;height:28px;flex:none}
+.demo-app .app-brand>span:last-child{font-size:9px}
+.demo-scroll{flex:1;min-height:0;overflow-y:auto;scrollbar-width:none;padding:4px 0 34px}
+.demo-scroll::-webkit-scrollbar{display:none}
+.demo-app .chat-time{margin:14px 0 12px;font-size:9px}
+.demo-app .chat-bubble{font-size:12.5px;margin-right:6px}
+.demo-app .user-bubble{margin:0 0 16px 14px}
+.demo-app .shared-recipe{font-size:11px}
+.demo-app .shared-recipe img{width:52px;height:56px}
+.demo-app .shared-recipe small{font-size:9px}
+.demo-app .olive-avatar{margin-bottom:2px}
+.demo-card{background:#fff;border:1px solid #dfe6d6;border-radius:14px;padding:14px;margin-top:12px}
+.demo-card .app-eyebrow{margin-top:0;font-size:9px}
+.pref-row{display:flex;gap:6px;margin-top:10px}
+.pref-row button{flex:1;min-height:36px;border-radius:18px;border:1px solid #c9d6bc;background:transparent;font:inherit;font-size:11.5px;color:#245a38;cursor:pointer}
+.pref-row button[aria-pressed="true"]{background:#155d35;color:#f1f8e9;border-color:#155d35}
+.swap-row{display:flex;align-items:center;gap:8px;font-size:11.5px;min-height:38px;margin-top:4px;color:#2d4a35}
+.swap-row input{accent-color:#155d35;width:16px;height:16px;flex:none}
+.demo-app .basket-items{margin-top:6px}
+.demo-app .basket-item strong{font-size:12px}
+.demo-app .basket-item small{font-size:9px}
+.demo-app .basket-item>span:last-child{font-size:11.5px}
+.demo-app .basket-total{font-size:12px;align-items:center}
+.demo-app .basket-total strong{font-size:16px}
+.demo-app button.phone-action{width:100%;border:0;font:inherit;font-size:12.5px;min-height:44px;cursor:pointer}
+.demo-app .phone-footnote{font-size:9px}
+.demo-back{display:flex;align-items:center;gap:3px;background:none;border:0;color:#4d674d;font:inherit;font-size:12px;padding:8px 0;cursor:pointer}
+.demo-title{font-size:22px;font-weight:500;letter-spacing:-.04em;line-height:1.1;margin:4px 0 0}
+.fulfil{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:14px 0 8px}
+.fulfil button{min-height:58px;border-radius:12px;border:1.5px solid #c9d6bc;background:#fff;font:inherit;font-size:12.5px;font-weight:600;color:#183c25;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer}
+.fulfil button small{font-size:9.5px;font-weight:400;color:#68776a}
+.fulfil button[aria-pressed="true"]{border-color:#155d35;background:#e5f0d8}
+.done-screen{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding-top:60px}
+.done-tick{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#155d35;color:#e1f5cf}
+.done-screen .phone-action{margin-top:18px}
+@media(prefers-reduced-motion:reduce){.ig-person.pulse .ig-pavatar,.ig-sheet,.ig-scrim{animation:none}}
+
