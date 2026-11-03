@@ -62,3 +62,5 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which installs with pn
 ## Validation
 
 See `docs/QA_REPORT.md` for actual checks, screenshot locations and limits. Screenshots are local QA artefacts, excluded from deployment source.
+
+For the existing private Sites host, keep the GitHub Pages base configuration and build a root-hosted copy with `pnpm exec tsc -b && pnpm exec vite build --base=/`. Package that `dist/` through the Sites source workflow. The ordinary `pnpm build` remains configured for GitHub Pages.
