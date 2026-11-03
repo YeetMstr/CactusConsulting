@@ -39,3 +39,15 @@ Desktop and mobile browser checks confirmed Ella's recipe → busy → recipe ar
 ## Finishing revision
 
 Restored chapter 03's original ReelExperience component and chapter 05's original LockerExperience component, omitting its old changing-character inset. Removed the superseded character-scene CSS and unused Reel-only frame configuration. Chapter 02's EllaJourney is retained unchanged. Build, lint, logic tests and desktop/mobile rendering are rechecked for this revision.
+
+## Publication edition checks
+
+Five narrative stages retained; the final stage uses the supplied marketplace image and exact requested sentence. Browser measurements confirmed identical image-element bottom positions across all five frames on desktop and mobile. No document horizontal overflow at 1440, 1024, 768, 390 and 360px (scrollbar width accounts for document width being slightly below viewport width). Browser text audit found no slide/deck/page pointers or Apple visual-reference wording. The technical architecture disclosure opens below the current phone demo. Eight ecosystem branches and the Olive-only central label verified. Sections 03 and 05 contain no switching character elements. The existing customised phone demo and GitHub Pages base configuration were preserved.
+
+Build/lint and all three existing business-logic tests passed. The standard build retains the GitHub Pages /CactusConsulting/ base; the private Sites package is built with an explicit root base override so both hosting destinations remain compatible.
+
+## Technology trends addition
+
+Added a standalone section immediately after Gen Z Shift and before Reel to Meal. Three editorial columns cover social discovery, multimodal/agentic AI and dynamic personalisation, followed by Woolworths Group's April 2025 five-year Google Cloud agreement and a transition into the proposed solution. The partnership is linked to Woolworths Group's official announcement. No presentation page pointers appear in the section.
+
+Production build, ESLint and all three existing logic tests passed. Browser checks at 1440, 1024, 768, 390 and 360px found no horizontal overflow. Desktop and mobile typography, stacked content, source link and section order were checked. Existing restored sections and demos were preserved.

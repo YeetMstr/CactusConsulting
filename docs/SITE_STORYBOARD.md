@@ -25,3 +25,15 @@ Chapter 05 replaces the small inset with full-size transparent source compositio
 ## Finishing revision (supersedes character integration in chapters 03 and 05)
 
 Ella's scroll-switched illustrations remain exclusively in chapter 02. Chapter 03 returns to the original anchored phone, floating ingredients and recipe-to-basket stages with no Ella graphic. Chapter 05 returns to the original CSS locker and compartment loading/opening animation, with all switching character artwork removed, including the old inset. Local interactive demos are retained.
+
+## Publication edition
+
+Ella's five scenes now form an illustrative Gen Z university-student day: commute and group chat; study and part-time work; recipe inspiration at lunch; shared-house planning; an evening choice of a multi-brand marketplace. The fifth scene uses the newly supplied Cactus Consulting (2).png and the requested marketplace wording. All image frames share a bottom baseline with contained, aspect-preserving sizing.
+
+The Reel to Meal demo and restored locker scene are preserved. An expandable technical architecture follows the recipe demo, matching the financial disclosure design. The ecosystem now has eight branches: Discover, Personalise, Reward, Receive, Plan together, Ready in 5, External AI and Nutrition. Olive's central caption is removed. The Rewards branch uses the official Everyday Rewards mark recoloured to the diagram's green.
+
+Public-facing slide/page pointers and implementation/editorial commentary have been removed. Project details retain authorship, research acknowledgements, modelled time horizons, accessibility controls and a concise visitor-facing explanation of simulated experiences.
+
+## Technology trends bridge
+
+Between chapter 02 and chapter 03, a pale sage editorial section explains three shifts: social discovery, multimodal/agentic AI and dynamic personalisation. Each connects the trend to a practical Woolworths opportunity. A forest-green Google Cloud partnership feature establishes the existing technology foundation; the closing invitation flows into Reel to Meal. Desktop columns stack on mobile. Existing chapter numbers are preserved.
