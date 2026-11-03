@@ -3,17 +3,17 @@ import { useScrollScene } from '../useScrollScene';
 import { Eyebrow } from './Common';
 import { CharacterSequence } from './CharacterSequence';
 const moments=[
- {src:'ella-scroll',alt:'Ella checks her phone for messages and inspiration before her commute',time:'7:30 AM',label:'On the way',title:'A day starts in the group chat.',body:'On her commute to uni, Ella checks messages, her timetable and a few Reels. Friends, plans and food inspiration all live on the same screen.'},
- {src:'ella-study',alt:'Ella balances study, work messages and a busy schedule',time:'9:00 AM',label:'Study. Work. Repeat.',title:'A timetable with very little spare time.',body:'Lectures, an assignment deadline and a part-time shift fill the day. Between classes, Ella wants everyday tasks to take less effort — and less of her student budget.'},
- {src:'ella-recipe',alt:'Ella discovers a recipe shared in her social feed during a lunch break',time:'12:30 PM',label:'The lunchtime scroll',title:'A Reel becomes tonight’s dinner idea.',body:'A friend shares a recipe during her lunch break. It looks easy, affordable and worth making. Ella saves it for later, alongside the other ideas in her feed.'},
- {src:'ella-scroll',alt:'Ella checks messages from her housemates and compares dinner plans',time:'5:30 PM',label:'The shared-house check-in',title:'Who’s home? What’s already in the fridge?',body:'Her housemates are sorting dinner in the chat. They need to coordinate ingredients, dietary preferences and costs without buying the same things twice.'},
- {src:'ella-marketplace',alt:'Ella enjoys her meal after choosing a multi-brand marketplace',time:'7:00 PM',label:'Dinner, on her terms',title:'Her choice goes beyond one retailer.',body:'Ella chooses a multi-brand marketplace over a single retailer, prioritising affordability, convenience and alignment with her values.'},
+ {src:'ella-scroll',alt:'Ella checks her phone for messages and inspiration before her commute',time:'7:30 AM',label:'Finding Food Inspiration',title:'Starting the day with Social Media',body:'Gen Z will be 19-35, in university, and starting full-time working or families. On her commute to uni, Ella checks messages, her timetable and a few Reels.'},
+ {src:'ella-study',alt:'Ella balances study, work messages and a busy schedule',time:'9:00 AM',label:'Too much effort',title:'She leads a busy life',body:'She is swamped with uni assignments and work. She is also not sure the store has the specific brand/item she saw. Would rather order online - Gen Z will expect personalised experiences that simplify their increasingly busy lives.'},
+ {src:'ella-recipe',alt:'Ella discovers a recipe shared in her social feed during a lunch break',time:'12:30 PM',label:'Sharing videos on social media',title:'A Reel becomes tonight’s dinner idea.',body:'A friend shares a recipe during her lunch break. It looks easy, affordable and worth making. Ella saves it for later.'},
+ {src:'ella-scroll',alt:'Ella checks messages from her housemates about dinner plans',time:'5:30 PM',label:'Gen Z Renewed interest in communal and co-iving',title:'Who’s home for dinner?',body:'Her housemates are sorting dinner in the chat. They need to coordinate ingredients, dietary preferences and costs without buying the same things twice.'},
+ {src:'ella-marketplace',alt:'Ella enjoys her meal after choosing a multi-brand marketplace',time:'7:00 PM',label:'Full stomach!',title:'Her choices go beyond one retailer.',body:'Ella chooses a multi-brand marketplace over a single retailer, prioritising affordability, convenience and alignment with her values.'},
 ];
 export function EllaJourney(){
  const {ref,phase,setPhase}=useScrollScene();
  return <section id="gen-z" className="genz-section ella-journey wrap" ref={ref}>
   <Eyebrow number="02">THE GEN Z SHIFT</Eyebrow>
-  <div className="ella-journey-heading" data-reveal><h2>Inspiration is instant.<br/><span>Life is a little busier.</span></h2><p>Meet Ella.<br/> A day in her digitally connected life.</p></div>
+  <div className="ella-journey-heading" data-reveal><h2>Day in a Life of Gen Z<br/><span>Looking Ahead</span></h2><p>Meet Ella.<br/> By 2031, Gen Z will be navigating increasingly independent and time-constrained lifestyles, relying on digital platforms to discover, plan and manage everyday needs.</p></div>
   <div className="scroll-story ella-story">
    <div className="story-visual ella-visual">
     <div className="ella-scene-top"><span>ELLA / GEN Z, 2031</span><span>{moments[phase].time} / 0{phase+1} OF 0{moments.length}</span></div>
