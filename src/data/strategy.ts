@@ -6,11 +6,11 @@ export const reelSteps = [
  {title:'Dinner, one step closer.', label:'Checkout', body:'Confirm the ingredients and quantities, then choose delivery or store collection. Every purchase stays in Ella’s control.'},
 ];
 export const readySteps = [
- {title:'Workout done. What’s next?', label:'Prompt', body:'With Jacob’s permission and a supported activity integration, a completed workout can trigger a relevant snack suggestion.'},
- {title:'A small order. A big shortcut.', label:'Confirm', body:'Jacob confirms a drink and a pre-made salad. The initial assortment is deliberately limited to nearby grab-and-go items.'},
+ {title:'Workout done. What’s next?', label:'Prompt', body:'With a customer’s permission and a supported activity integration, a completed workout can trigger a relevant snack suggestion.'},
+ {title:'A small order. A big shortcut.', label:'Confirm', body:'A customer confirms a drink and a pre-made salad. The initial assortment is deliberately limited to nearby grab-and-go items.'},
  {title:'Picked by a real person.', label:'Load', body:'A separate Woolworths team member picks the items and loads a refrigerated compartment. Modular lockers adapt to demand and staff capacity.'},
- {title:'Fresh, until you arrive.', label:'Ready', body:'The compartment closes and Jacob receives a collection notification. Five minutes is the proposed readiness target, subject to pilot validation.'},
- {title:'Your order. Your way out.', label:'Collect', body:'Jacob unlocks his compartment with the app or a one-time PIN. He takes his order and gets on with his day.'},
+ {title:'Fresh, until you arrive.', label:'Ready', body:'The compartment closes and the customer receives a collection notification. Five minutes is the proposed readiness target, subject to pilot validation.'},
+ {title:'Your order. Your way out.', label:'Collect', body:'The customer unlocks their compartment with the app or a one-time PIN. They take their order and get on with their day.'},
 ];
 export const years = ['FY27','FY28','FY29','FY30','FY31','FY32','FY33','FY34'];
 export const financials = {
@@ -26,11 +26,11 @@ export const financials = {
  cashflow:[-2.4,-1.9,-1.6,-0.3,1.8,4.8,8.1,10.7],
 };
 export const risks = [
- ['AI reliability','Use verified product information, let customers edit ingredients and require confirmation before purchase.','Deck p12'],
- ['Adoption & forecasting','Keep the experience simple, use relevant Rewards incentives and test social trends against observed sales before changing inventory.','Deck p12'],
- ['Privacy & platform access','Give customers control over shared data, secure personal information, review privacy compliance and use approved social integrations with alternative recipe-sharing routes.','Deck p12'],
- ['Staff workload & food safety','Validate picking times, train teams, monitor refrigeration and set collection windows. Gate each rollout on service levels and safe operating capacity.','Feasibility safeguards; pp9,17'],
- ['Demand & unit economics','Pilot before expansion. Measure order/site/day contribution and incremental sales, rather than assuming every routed order is new business.','Deck pp15–17'],
+ ['AI reliability','Use verified product information, let customers edit ingredients and require confirmation before purchase.'],
+ ['Adoption & forecasting','Keep the experience simple, use relevant Rewards incentives and test social trends against observed sales before changing inventory.'],
+ ['Privacy & platform access','Give customers control over shared data, secure personal information, review privacy compliance and use approved social integrations with alternative recipe-sharing routes.'],
+ ['Staff workload & food safety','Validate picking times, train teams, monitor refrigeration and set collection windows. Gate each rollout on service levels and safe operating capacity.'],
+ ['Demand & unit economics','Pilot before expansion. Measure order/site/day contribution and incremental sales, rather than assuming every routed order is new business.'],
 ];
 export const milestones = [
  ['FY27','Build the foundation','Product development, secure AI, privacy and food safety approvals.'],
