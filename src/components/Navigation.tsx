@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-const links=[['vision','Vision'],['reel-to-meal','Reel to Meal'],['ready-in-5','Ready in 5'],['ecosystem','Ecosystem'],['impact','Impact']];
+const links=[['vision','Vision'],['reel-to-meal','Reel to Meal'],['explore-mode','Explore Mode'],['ready-in-5','Ready in 5'],['ecosystem','Ecosystem'],['impact','Impact']];
 export function Navigation(){
  const [open,setOpen]=useState(false),[active,setActive]=useState('vision');
  useEffect(()=>{

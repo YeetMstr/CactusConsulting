@@ -6,7 +6,7 @@ export const reelSteps = [
  {title:'Reel to Meal', label:'Checkout', body:'Confirm the ingredients and quantities, then choose delivery or store collection.'},
 ];
 export const readySteps = [
- {title:'Workout done. What’s next?', label:'Prompt', body:'A completed workout can trigger a relevant snack suggestion.'},
+ {title:'Workout done. What’s next?', label:'Prompt', body:'A completed workout from a phone or smartwatch can trigger a relevant snack suggestion through integrations.'},
  {title:'A small order. A big shortcut.', label:'Confirm', body:'A customer confirms a drink and a pre-made salad. The initial assortment is deliberately limited to nearby grab-and-go items.'},
  {title:'Picked by a real person.', label:'Load', body:'A separate Woolworths team member picks the items and loads a refrigerated compartment. Modular lockers adapt to demand and staff capacity.'},
  {title:'Fresh, until you arrive.', label:'Ready', body:'The compartment closes and the customer receives a collection notification. Five minutes is the proposed readiness target, subject to pilot validation.'},
@@ -29,13 +29,13 @@ export const risks = [
  ['AI reliability','Use verified product information, let customers edit ingredients and require confirmation before purchase.'],
  ['Adoption & forecasting','Keep the experience simple, use relevant Rewards incentives and test social trends against observed sales before changing inventory.'],
  ['Privacy & platform access','Give customers control over shared data, secure personal information, review privacy compliance and use approved social integrations with alternative recipe-sharing routes.'],
- ['Staff workload & food safety','Validate picking times, train teams, monitor refrigeration and set collection windows. Gate each rollout on service levels and safe operating capacity.'],
- ['Demand & unit economics','Pilot before expansion. Measure order/site/day contribution and incremental sales, rather than assuming every routed order is new business.'],
+ ['Staff workload & food safety','Validate picking times, train teams, monitor refrigeration and set collection windows.'],
+ ['Demand & unit economics','Pilot before expansion. Measure order/site/day contribution and incremental sales.'],
 ];
 export const milestones = [
- ['FY27','Build the foundation','Product development, secure AI, privacy and food safety approvals.'],
- ['FY28','Reel to Meal goes live','Launch the recipe-to-basket experience; test adoption and conversion.'],
- ['FY29','Ready in 5 pilot','20 enabled stores. Validate cold chain, picking time and incrementality.'],
- ['FY30+','Scale what works','Stage expansion around store demand, contribution and staff capacity.'],
- ['FY34','Modelled maturity','750 Ready in 5 stores and 3 million annual Reel to Meal orders.'],
+ ['FY27','Build the foundation','Product development, secure AI, privacy and food safety approvals. Assess Explore Mode’s trolley charging, BLE/Product tag positioning testing, store maps and Scan as You Shop integration.'],
+ ['FY28','Reel to Meal goes live','Launch the recipe-to-basket experience; test adoption and conversion. Prototype Explore Mode’s aisle guidance and personalised recommendations in controlled store trials.'],
+ ['FY29','Ready in 5 & Explore Mode pilots','Ready in 5: 20 enabled stores; validate cold chain, picking time and incrementality. Pilot Explore Mode separately, testing aisle accuracy, scanning, checkout verification and customer uptake.'],
+ ['FY30+','Scale what works','Stage expansion around store demand, contribution and staff capacity. Expand Explore Mode only where pilots demonstrate reliable guidance, accurate baskets and a viable store-level business case.'],
+ ['FY34','Product maturity','750 Ready in 5 stores and 3 million annual Reel to Meal orders.'],
 ];
