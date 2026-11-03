@@ -1,12 +1,12 @@
 export const reelSteps = [
- {title:'A little inspiration.', label:'Discover', body:'Ella spots a recipe in her feed. Dinner looks good. Turning it into a grocery shop should be just as easy.'},
- {title:'Share it with Olive.', label:'Share', body:'Send the recipe to Olive AI through Reel to Meal. An approved sharing route connects inspiration to the Woolworths app.'},
- {title:'Ingredients, understood.', label:'Understand', body:'Proposed video, speech and language tools identify ingredients. Ella checks the suggestions before anything reaches checkout.'},
- {title:'A basket that gets you.', label:'Personalise', body:'Dietary requirements, favourite brands and available alternatives shape the suggested basket. Relevant offers help make it hers.'},
- {title:'Dinner, one step closer.', label:'Checkout', body:'Confirm the ingredients and quantities, then choose delivery or store collection. Every purchase stays in Ella’s control.'},
+ {title:'A little inspiration.', label:'Discover', body:'Ella spots a recipe in her feed. Dinner looks good.'},
+ {title:'Share it with Olive.', label:'Share', body:'Send the recipe to Olive AI through Reel to Meal.'},
+ {title:'Ingredients, understood.', label:'Understand', body:'Video, speech and language tools identify ingredients. Ella checks the suggestions before anything reaches checkout.'},
+ {title:'Your preferences', label:'Personalise', body:'Dietary requirements, favourite brands and available alternatives based on you.'},
+ {title:'Reel to Meal', label:'Checkout', body:'Confirm the ingredients and quantities, then choose delivery or store collection.'},
 ];
 export const readySteps = [
- {title:'Workout done. What’s next?', label:'Prompt', body:'With a customer’s permission and a supported activity integration, a completed workout can trigger a relevant snack suggestion.'},
+ {title:'Workout done. What’s next?', label:'Prompt', body:'A completed workout can trigger a relevant snack suggestion.'},
  {title:'A small order. A big shortcut.', label:'Confirm', body:'A customer confirms a drink and a pre-made salad. The initial assortment is deliberately limited to nearby grab-and-go items.'},
  {title:'Picked by a real person.', label:'Load', body:'A separate Woolworths team member picks the items and loads a refrigerated compartment. Modular lockers adapt to demand and staff capacity.'},
  {title:'Fresh, until you arrive.', label:'Ready', body:'The compartment closes and the customer receives a collection notification. Five minutes is the proposed readiness target, subject to pilot validation.'},

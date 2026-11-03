@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { useScrollScene } from '../useScrollScene';
 import { Eyebrow } from './Common';
 import { CharacterSequence } from './CharacterSequence';
@@ -21,9 +21,9 @@ export function EllaJourney(){
     <div className="ella-scene-bottom"><p>{moments[phase].label}</p><span>SCROLL THROUGH HER DAY <ArrowDown size={13}/></span></div>
     <div className="phase-controls" aria-label="Preview Ella’s day">{moments.map((moment,i)=><button key={moment.label} className={phase===i?'selected':''} aria-label={`Preview Ella: ${moment.label}`} aria-pressed={phase===i} onClick={()=>setPhase(i)}>{i+1}</button>)}</div>
    </div>
-   <div className="story-copy">{moments.map((moment,i)=><article className={`story-step ${phase===i?'in-focus':''}`} data-step={i} key={moment.label}><span className="step-number">{moment.time} / {moment.label}</span><h3>{moment.title}</h3><p>{moment.body}</p>{i===moments.length-1&&<a className="text-link" href="#technology-trends">What could change her next choice? <ArrowRight size={16}/></a>}</article>)}</div>
+   <div className="story-copy">{moments.map((moment,i)=><article className={`story-step ${phase===i?'in-focus':''}`} data-step={i} key={moment.label}><span className="step-number">{moment.time} / {moment.label}</span><h3>{moment.title}</h3><p>{moment.body}</p></article>)}</div>
   </div>
   <div className="genz-bottom"><p>By 2031, Gen Z will be navigating more independent, time-constrained lives.<br/><strong>The opportunity: close the gap between discovery and dinner.</strong></p><div className="research-stat"><strong>69<span>%</span></strong><p>of Gen Z use social media<br/>for product discovery.</p></div><div className="research-stat"><strong>67<span>%</span></strong><p>of Gen Z want personalised<br/>content and recommendations.</p></div></div>
-  <p className="source-note">An illustrative Gen Z day in 2031. <a href="#sources">Research acknowledgements.</a></p>
+  <p className="source-note"><a href="#sources">Research acknowledgements.</a></p>
  </section>;
 }
